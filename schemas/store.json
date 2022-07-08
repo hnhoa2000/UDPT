@@ -1,0 +1,29 @@
+{
+    "type": "object",
+    "properties": {
+        "Storename": {
+            "type": "string"
+        },
+        "StoreAddress": {
+            "type": "string"
+        },
+        "StorePhone": {
+            "type": "string"
+        },
+        "StoreLogo": {
+            "type": "string"
+        },
+        "OpenTime": {
+            "type": "string"
+        },
+        "AccountId": {
+            "type": "number"
+        }
+    },
+    "required": [
+        "Storename",
+        "StorePhone",
+        "OpenTime"
+    ],
+    "additionalProperties": false
+}

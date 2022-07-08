@@ -25,7 +25,7 @@ router.delete('/:idTaiKhoan', async (req, res) => {
     const ret = await userModel.del(req.params.idTaiKhoan);
     if (ret === 0) {
         res.status(401).json({
-            message: "idTaiKhoam is not exist"
+            message: "idTaiKhoan is not exist"
         });
     } else {
         res.status(201).json({

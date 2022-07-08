@@ -2,6 +2,7 @@ import express from 'express';
 import morgan from 'morgan';
 import userRouter from './routes/user.route.js';
 import authRouter from './routes/auth.route.js';
+import storeRouter from './routes/store.route.js';
 import cors from 'cors'
 
 const app = express();
@@ -13,7 +14,7 @@ app.use(morgan('dev'));
 
 app.use('/api/users', userRouter);
 app.use('/api/auth', authRouter);
-
+app.use('/api/store', storeRouter);
 
 
 app.get('/err', function (req, res) {
