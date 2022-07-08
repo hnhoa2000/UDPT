@@ -1,0 +1,26 @@
+{
+    "type": "object",
+    "properties": {
+        "TenNhanVien": {
+            "type": "string"
+        },
+        "DienThoai": {
+            "type": "string"
+        },
+        "DiaChi": {
+            "type": "string"
+        },
+        "NhiemVu": {
+            "type": "string"
+        },
+        "StoreID": {
+            "type": "string"
+        }
+    },
+    "required": [
+        "TenNhanVien",
+        "DienThoai",
+        "DiaChi"
+    ],
+    "additionalProperties": false
+}
